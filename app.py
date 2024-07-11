@@ -1,6 +1,6 @@
 import pickle
 import streamlit as st
-
+import numpy as np
 # Load the trained model from a file
 with open('svm_classifier.pkl', 'rb') as f:
   svm_classifier = pickle.load(f)
