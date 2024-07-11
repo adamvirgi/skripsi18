@@ -3,7 +3,7 @@ import streamlit as st
 import numpy as np
 
 # Load the trained model and scaler from a file
-with open('svm_model.pkl', 'rb') as f:
+with open('svm_classifier.pkl', 'rb') as f:
     model_data = pickle.load(f)
     svm_classifier = model_data['model']  # Assuming your model was saved as 'model' in pickle
     ss_train_test = model_data['scaler']  # Assuming your scaler was saved as 'scaler' in pickle
